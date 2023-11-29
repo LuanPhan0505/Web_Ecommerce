@@ -1,0 +1,72 @@
+
+.shopcategory img{
+  display: block;
+  /* margin: 50px ; */
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+
+.shopcategory-indexSort{
+  display: flex;
+  margin: 10px 150px  ;
+  justify-content: space-between ;
+  align-items: center;
+}
+
+.shopcategory-sort {
+  margin: 10px;
+  padding: 10px 20px; /* Adjust padding for better spacing */
+  border-radius: 30px;
+  border: 1px solid #888;
+  display: flex;
+  /* align-items: center; Align text and image vertically */
+}
+
+
+.shopcategory-sort img {
+  width: 20%; /* Adjust the width of the image */
+  margin-left: 20px; /* Add some space between text and image */
+}
+
+
+.shopcategory-indexSort p span{
+  font-weight: 400;
+}
+
+
+.shopcategory-products{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 50px;
+  gap: 30px; 
+}
+
+/* Thêm hoặc cập nhật CSS cho phần tử Item hoặc img trong Item */
+.shopcategory-products img {
+  width: 80%; /* Đặt chiều rộng ảnh là 100% của container */
+  /* height: auto; Tự động điều chỉnh chiều cao để giữ tỷ lệ khung hình */
+}
+
+/* Đảm bảo rằng nội dung không bị tràn ra khỏi khung hình */
+
+.shopcategory-products .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.shopcategory-loadmore{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px auto;
+  width: 233px;
+  height: 69px;
+  border-radius: 75px;
+  background: #ededed;
+  color: #787878;
+  font-size: 18px;
+  font-weight: 500;
+}

@@ -11,7 +11,10 @@ import iphone_banner from './Components/Assets/banner/banner_iphone.jpg'
 import mac_banner from './Components/Assets/banner/banner_mac.png'
 import watch_banner from './Components/Assets/banner/banner_watch.jpg'
 import ipad_banner from './Components/Assets/banner/banner_ipad.png'
-
+// import Shipping from './Pages/Cart_product/Shipping';
+import Checkout from './Pages/Cart_product/Checkout';
+// import Order from './Components/Order/Order'
+import Shipping from './Pages/Cart_product/Shipping';
 
 function App() {
   return (
@@ -31,6 +34,8 @@ function App() {
         </Route>
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/login' element={<LoginSignup/>}/>
+        <Route path='/shipping' element={<Shipping/>}/>
+        <Route path='/checkout' element={<Checkout/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>

@@ -4,6 +4,7 @@ import logo from '../Assets/logo.png'
 import cart_icon from '../Assets/cart_icon.png'
 import {Link} from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
+import search_icon from '../Assets/search_icon.png'
 
 const Navbar = () => {
     const [menu,setMenu] = useState("shop"); /*ã này đang khởi tạo một biến trạng thái menu với giá trị ban đầu là "shop", và bạn có thể sử dụng setMenu để thay đổi giá trị của biến này trong thành phần React của bạn*/
@@ -25,6 +26,15 @@ const Navbar = () => {
                 <li onClick={()=>{setMenu("Promotion")}}><Link style= {{textDecoration: 'none'}} to='/Promotion'>Promotion</Link>{menu==="Promotion"?<hr/>:<></>}</li>
                 <li onClick={()=>{setMenu("Support")}}><Link style= {{textDecoration: 'none'}} to='/Support'>Support</Link>{menu==="Support"?<hr/>:<></>}</li>
             </ul>
+
+            <div className="nav-search">
+                <img src={search_icon} alt=""/>
+                <input placeholder="Type to search..." />
+                {/* <Link to='/search'>
+                    <input placeholder="Type to search..." />
+                </Link> */}
+            </div>
+
             <div className="nav-login-cart">
                 <Link to='/login'><button>Login</button></Link>
                 <Link to='/cart'><img src={cart_icon} alt=""/></Link>

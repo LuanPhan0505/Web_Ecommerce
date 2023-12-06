@@ -1,65 +1,61 @@
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-around;
   padding: 16px;
   box-shadow: 0 1px 3px -2px black;
-  /* background: linear-gradient(180deg, #717070e3, #e7e7eb3b); */
   background: rgb(86, 85, 85);
 }
 
-.nav-logo{
+.nav-logo {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.nav-logo p{
+.nav-logo p {
   color: #faf8f8a9;
   font-size: 38px;
   font-weight: 600;
   padding: 10px 10px; /* Adjust padding for better spacing */
   border-radius: 10px;
   border: 2px solid #565454;
-  /* display: flex; */
 }
 
-.nav-menu{
+.nav-menu {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 40px;
+  gap: 20px; /* Adjust the gap between menu items */
   color: #060000;
   font-size: 20px;
-  font-weight: 550; 
+  font-weight: 550;
 }
 
-.nav-menu li:hover{
-  transform: scale(1.55); 
+.nav-menu li:hover {
+  transform: scale(1.55);
   transition: 0.6s;
   background: #00000028;
 }
 
-.nav-menu li{
+.nav-menu li {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 3px;
   cursor: pointer;
-  /* color: rgba(243, 243, 243, 0.465); */
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
-  color: #8c8c8c; /* Change to the desired shade of gray */
-
+  color: #8c8c8c;
 }
 
 .nav-menu li a {
-  color: #fffbfb; /* Your preferred text color for active links */
+  color: #fffbfb;
   text-decoration: none;
 }
 
 /* Thanh chon */
-.nav-menu hr{ 
+.nav-menu hr {
   border: none;
   width: 80%;
   height: 3px;
@@ -67,27 +63,30 @@
   background: #454444;
 }
 
-.nav-login-cart{
+.nav-login-cart {
   display: flex;
   align-items: center;
-  gap: 45px;
+  gap: 30px; /* Adjust the gap between login and cart */
 }
 
-.nav-login-cart button{
-  width: 167px;
+.nav-login-cart button {
+  width: 150px; /* Adjust the width of the login button */
   height: 58px;
-  outline: none; 
+  outline: none;
   border: 1px solid grey;
-  border-radius: 75px; /*chinh cai khung bo tron*/
+  border-radius: 75px;
   color: #515115;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   background: white;
   cursor: pointer;
 }
 
-.nav-login-cart button:active{ /*chinh hieu ung click*/
+.nav-login-cart button:active {
   background: #f9e9e9;
+}
+.nav-login-cart img {
+  position: relative; 
 }
 
 .nav-cart-count{
@@ -97,9 +96,67 @@
   justify-content: center;
   align-items: center;
   margin-top: -35px;
-  margin-left: -55px; 
+  margin-left: -25px; 
   border-radius: 11px;
   font-size: 14px;
   background: red;
   color: rgb(249, 242, 242); 
+}
+
+.nav-search {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Adjust the gap between search icon and input */
+}
+
+.nav-search input {
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0 15px;
+  box-shadow: 0px 0px 8px #ddd;
+  background-color: white;
+}
+
+.nav-search img {
+  width: 30px;
+}
+
+/* Add media query for screens smaller than 768px (tablet) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between menu items for smaller screens */
+  }
+
+  .nav-logo {
+    margin-bottom: 10px;
+  }
+
+  .nav-login-cart {
+    gap: 10px; /* Adjust the gap between login and cart for smaller screens */
+  }
+}
+
+/* Add media query for screens smaller than 480px (phone) */
+@media (max-width: 480px) {
+  .nav-menu {
+    font-size: 16px;
+  }
+
+  .nav-search {
+    gap: 10px; /* Adjust the gap between search icon and input for smaller screens */
+  }
+
+  .nav-login-cart button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }

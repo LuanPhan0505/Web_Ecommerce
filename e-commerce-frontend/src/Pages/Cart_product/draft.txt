@@ -1,0 +1,41 @@
+{/* <label>
+          Province:
+          <select value={province} onChange={handleProvinceChange}>
+            <option value="">Select Province</option>
+            {provinces.map((p) => (
+              <option key={p} value={p}>
+                {p}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label>
+          District:
+          <select
+            value={district}
+            onChange={(e) => setDistrict(e.target.value)}
+            disabled={!province} // Disable if no province selected
+          >
+            <option value="">Select District</option>
+            {districts[province] &&
+              districts[province].map((d) => (
+                <option key={d} value={d}>
+                  {d}
+                </option>
+              ))}
+          </select>
+        </label> */}
+
+
+          // const [provinces] = useState(["Province A", "Province B", "Province C"]);
+  // const [districts] = useState({
+  //   "Province A": ["District A1", "District A2", "District A3"],
+  //   "Province B": ["District B1", "District B2", "District B3"],
+  //   "Province C": ["District C1", "District C2", "District C3"],
+  // });
+
+  // const handleProvinceChange = (e) => {
+  //   setProvince(e.target.value);
+  //   // Reset district when province changes
+  //   setDistrict("");
+  // };

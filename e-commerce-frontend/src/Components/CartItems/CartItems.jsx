@@ -19,6 +19,7 @@ const CartItems = () => {
         <p>Remove</p>
       </div>
       <hr />
+      
       {products.map((e)=>{
 
         if(cartItems[e.id]>0)

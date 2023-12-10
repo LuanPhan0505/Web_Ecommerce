@@ -1,8 +1,9 @@
-import p1_img from './product_1.png'
-import p2_img from './product_2.png'
-import p3_img from './product_3.png'
-import p4_img from './product_4.png'
 
+import p1_img from "./Iphone/ip1.jpg";
+import p2_img from "./Iphone/ip2.jpg";
+import p3_img from "./Iphone/ip3.jpg";
+import p4_img from "./Iphone/ip4.jpg";
+  
 let data_product = [
   {
     id:1,

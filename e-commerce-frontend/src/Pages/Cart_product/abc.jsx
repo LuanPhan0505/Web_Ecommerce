@@ -51,7 +51,7 @@ const Shipping = () => {
 
         <button type="submit">
            <Link to={`/checkout?name=${name}&address=${address}&province=${province}&phoneNumber=${PhoneNumber}`}>
-               Submit
+            Submit
            </Link>
         </button>
       </form>

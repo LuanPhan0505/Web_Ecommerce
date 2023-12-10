@@ -15,6 +15,7 @@ import ipad_banner from './Components/Assets/banner/banner_ipad.png'
 import Checkout from './Pages/Cart_product/Checkout';
 // import Order from './Components/Order/Order'
 import Shipping from './Pages/Cart_product/Shipping';
+// import CheckoutContainer from './Pages/Cart_product/CheckOutContainer';
 
 function App() {
   return (
@@ -23,9 +24,9 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Menu/>}/>
-        <Route path='/iPhone' element={<ShopCategory banner={iphone_banner} category="men"/>}/> 
-        <Route path='/iPad' element={<ShopCategory banner={ipad_banner} category="women"/>}/>
-        <Route path='/Mac' element={<ShopCategory banner={mac_banner} category="kid"/>}/>
+        <Route path='/iPhone' element={<ShopCategory banner={iphone_banner} category="iphone"/>}/> 
+        <Route path='/iPad' element={<ShopCategory banner={ipad_banner} category="ipad"/>}/>
+        <Route path='/Mac' element={<ShopCategory banner={mac_banner} category="mac"/>}/>
         <Route path='/Watch' element={<ShopCategory banner={watch_banner} category="Watch"/>}/>
         <Route path='/Promotion' element={<ShopCategory category="{Promotion}"/>}/>
         <Route path='/Support' element={<ShopCategory category="Support"/>}/>
@@ -39,8 +40,8 @@ function App() {
       </Routes>
       <Footer/>
       </BrowserRouter>
-    </div>
 
+    </div>
   );
 }
 
